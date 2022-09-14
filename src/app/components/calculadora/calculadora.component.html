@@ -1,0 +1,13 @@
+<h2>Calculadora</h2>
+Operando 1: <input type="number" [(ngModel)]="num1"><br/>
+Operando 2: <input type="number" [(ngModel)]="num2"><br/>
+<div id="operadores">
+    <button (click)="sumar()">+</button>
+    <button (click)="resta()">-</button>
+    <button (click)="multiplicar()">*</button>
+    <button (click)="dividir()">/</button>
+</div>
+
+<div *ngIf="mostrar">
+    El resultado es: {{total}} 
+</div>

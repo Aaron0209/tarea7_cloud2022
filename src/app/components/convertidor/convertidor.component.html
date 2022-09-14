@@ -1,0 +1,6 @@
+Celcius <input type="number" [(ngModel)]="numC"> <br/>
+<button (click)="convertirCF()">Convertir</button>
+
+<div *ngIf="mostrar">
+    El resultado es: {{total}} grados Fahrenheit.
+</div>
